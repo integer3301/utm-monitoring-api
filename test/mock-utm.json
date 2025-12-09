@@ -1,0 +1,30 @@
+{
+  "info": [
+    {
+      "version": "4.2.0",
+      "contour": "prod",
+      "rsaError": null,
+      "checkInfo": "2025-12-09 14:17:02.000 +0900",
+      "ownerId": "030000549061",
+      "db": {
+        "createDate": "2025-11-28 08:18:51.789",
+        "ownerId": "030000549061"
+      },
+      "rsa": {
+        "certType": "RSA",
+        "startDate": "2025-11-16 12:40:01 +0900",
+        "expireDate": "2026-11-16 12:50:01 +0900",
+        "isValid": "valid",
+        "issuer": "pki.fsrar.ru"
+      },
+      "gost": {
+        "certType": "GOST",
+        "startDate": "2025-11-01 16:05:16 +0900",
+        "expireDate": "2026-11-01 16:15:16 +0900",
+        "isValid": "valid",
+        "issuer": "ООО \"КОМПАНИЯ \"ТЕНЗОР\""
+      },
+      "license": true
+    }
+  ]
+}
