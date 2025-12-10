@@ -1,15 +1,20 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { UacModule } from './uac/uac.module';
+import { ConfigModule } from '@nestjs/config';
 import { ScheduleModule } from '@nestjs/schedule';
+
+import { AppController } from 'src/app.controller';
+import { AppService } from 'src/app.service';
+import { DatabaseService } from 'src/database/database.service';
+import { PollerService } from 'src/poller/poller.service';
 
 @Module({
   imports: [
-    ScheduleModule.forRoot(), // 🔹 нужно, чтобы cron работал
-    UacModule,
+    ScheduleModule.forRoot(),
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, DatabaseService, PollerService],
 })
 export class AppModule {}
