@@ -1,20 +1,15 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { ScheduleModule } from '@nestjs/schedule';
 
-import { AppController } from 'src/app.controller';
-import { AppService } from 'src/app.service';
-import { DatabaseService } from 'src/database/database.service';
-import { PollerService } from 'src/poller/poller.service';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+
+import { MonitoringModule } from './modules/monitoring/monitoring.module';
+import { DatabaseModules } from './database/database.module';
 
 @Module({
-  imports: [
-    ScheduleModule.forRoot(),
-    ConfigModule.forRoot({
-      isGlobal: true,
-    }),
-  ],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), MonitoringModule, DatabaseModules],
   controllers: [AppController],
-  providers: [AppService, DatabaseService, PollerService],
+  providers: [AppService],
 })
 export class AppModule {}

@@ -8,7 +8,7 @@ export const config = {
     pass: process.env.EMAIL_PASS || '',
   },
   poller: {
-    intervalSeconds: parseInt(process.env.POLLER_INTERVAL || '10'), // интервал опроса
+    intervalSeconds: parseInt(process.env.POLLER_INTERVAL || '5'), // интервал опроса
   },
   db: {
     host: process.env.DB_HOST || 'localhost',
