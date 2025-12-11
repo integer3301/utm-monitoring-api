@@ -1,21 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UTM Мониторинг</title>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-    h1, h2, h3 { color: #2c3e50; }
-    code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
-    pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
-    ul { margin-bottom: 20px; }
-    li { margin-bottom: 5px; }
-    .folder { color: #2980b9; }
-    .file { color: #27ae60; }
-  </style>
-</head>
-<body>
+
   <h1>UTM Мониторинг</h1>
   <p>Приложение на NestJS для мониторинга UTM и сбора метрик. Архитектура модульная с выделением отдельных модулей для мониторинга, метрик и работы с базой данных.</p>
 
@@ -87,5 +71,4 @@ CREATE TABLE metrics (
     <li>Создать <code>.env</code> с настройками БД и POLLER_INTERVAL</li>
     <li>Запустить: <code>npm run start:dev</code></li>
   </ul>
-</body>
 </html>
