@@ -6,28 +6,28 @@
   <h2>Структура проекта</h2>
   <pre>
 <span class="folder">src/</span>
-├── <span class="file">app.module.ts</span>            # Главный модуль приложения
-├── <span class="file">app.controller.ts</span>       # Главный контроллер (health check и др.)
-├── <span class="file">app.service.ts</span>          # Главный сервис
-├── <span class="folder">database/</span>             # Модуль работы с БД
+├── <span class="file">app.module.ts</span>            
+├── <span class="file">app.controller.ts</span>       
+├── <span class="file">app.service.ts</span>         
+├── <span class="folder">database/</span>             
 │   ├── <span class="file">database.module.ts</span>
-│   └── <span class="file">database.service.ts</span> # Подключение к PostgreSQL
+│   └── <span class="file">database.service.ts</span> 
 ├── <span class="folder">modules/</span>
 │   └── <span class="folder">monitoring/</span>
 │       ├── <span class="file">monitoring.module.ts</span>
 │       ├── <span class="folder">poller/</span>
 │       │   ├── <span class="file">poller.module.ts</span>
 │       │   ├── <span class="file">poller.service.ts</span>
-│       │   └── <span class="file">utm-client.ts</span> # Клиент для запроса UTM
+│       │   └── <span class="file">utm-client.ts</span> 
 │       └── <span class="folder">metrics/</span>
 │           ├── <span class="file">metrics.module.ts</span>
 │           ├── <span class="file">metrics.service.ts</span>
 │           ├── <span class="file">metrics.repository.ts</span>
-│           └── <span class="file">utm.repository.ts</span> # CRUD для таблицы utms
+│           └── <span class="file">utm.repository.ts</span> 
 ├── <span class="folder">shared/</span>
-│   └── <span class="folder">types/</span>            # Общие типы и интерфейсы
+│   └── <span class="folder">types/</span>            
 └── <span class="folder">api/</span>
-    └── <span class="file">utm.controller.ts</span>   # REST API для работы с UTM
+    └── <span class="file">utm.controller.ts</span>  
   </pre>
 
   <h2>Рекомендации по модулям</h2>
